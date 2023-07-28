@@ -13,5 +13,5 @@ Solution :
 2. Update `GRUB_CMDLINE_LINUX_DEFAULT` value by adding `i915.enable_dpcd_backlight=3` to existing value.
    So that, the final result should be `GRUB_CMDLINE_LINUX_DEFAULT="quiet_splash i915.enable_dpcd_backlight=3"`.
    ![alt text](https://github.com/pkshahid/Ubuntu-22.04-LTS-in-Samsung-Galaxy-Book-2-Pro/blob/main/Screenshot from 2023-07-28 19-41-40.png?raw=true)
-   ![alt text](https://github.com/pkshahid/Ubuntu-22.04-LTS-in-Samsung-Galaxy-Book-2-Pro/blob/main/Screenshot%20from%202023-07-28%2019-41-40.png)https://github.com/pkshahid/Ubuntu-22.04-LTS-in-Samsung-Galaxy-Book-2-Pro/blob/main/Screenshot%20from%202023-07-28%2019-41-40.png?raw=true)
+   ![alt text](https://github.com/pkshahid/Ubuntu-22.04-LTS-in-Samsung-Galaxy-Book-2-Pro/blob/main/Screenshot%20from%202023-07-28%2019-41-40.png?raw=true)
 4. Save and Reboot the system or run `update-grub`.
