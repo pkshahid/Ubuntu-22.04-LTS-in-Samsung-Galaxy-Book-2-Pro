@@ -22,6 +22,9 @@ Solution :
    - Check currently installed version.<br>
       ` uname -r `
    - Download the mainline Linux kernel of your choice. <br>
+   <br><br>
+   ![screenshot](https://github.com/pkshahid/Ubuntu-22.04-LTS-in-Samsung-Galaxy-Book-2-Pro/blob/main/kernal.png?raw=true)
+<br><br>
         - ` wget https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.4.6/amd64/linux-headers-6.4.6-060406-generic_6.4.6-060406.202307241739_amd64.deb `
         - ` wget https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.4.6/amd64/linux-headers-6.4.6-060406_6.4.6-060406.202307241739_all.deb `
         - ` wget https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.4.6/amd64/linux-image-unsigned-6.4.6-060406-generic_6.4.6-060406.202307241739_amd64.deb `
@@ -36,4 +39,7 @@ Solution :
    ` sudo nano /etc/modprobe.d/iwlwifi.conf `
 2. Add following line to the above file <br>
    `options iwlwifi 11n_disable=1 swcrypto=1`
-3. Save and Reboot the system.
+   <br><br>
+   ![screenshot](https://github.com/pkshahid/Ubuntu-22.04-LTS-in-Samsung-Galaxy-Book-2-Pro/blob/main/wifi.png?raw=true)
+   <br><br>
+4. Save and Reboot the system.
