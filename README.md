@@ -21,7 +21,7 @@ Solution :
 1. Update Kernal to `6.4.6`.
    - Check currently installed version.<br>
       ` uname -r `
-   - Download the mainline Linux kernel of version `v6.4.6` <br>
+   - Download the mainline Linux kernel of version `v6.4.6` from here(https://kernel.ubuntu.com/~kernel-ppa/mainline/?C=N%3BO%3DD&ref=itsfoss.com) <br>
    <br><br>
    ![screenshot](https://github.com/pkshahid/Ubuntu-22.04-LTS-in-Samsung-Galaxy-Book-2-Pro/blob/main/kernal.png?raw=true)
 <br><br>
