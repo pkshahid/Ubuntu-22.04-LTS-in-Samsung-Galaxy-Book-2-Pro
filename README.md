@@ -12,5 +12,28 @@ Solution :
    ` sudo nano /etc/default/grub `
 2. Update `GRUB_CMDLINE_LINUX_DEFAULT` value by adding `i915.enable_dpcd_backlight=3` to existing value.
    So that, the final result should be `GRUB_CMDLINE_LINUX_DEFAULT="quiet_splash i915.enable_dpcd_backlight=3"`.
+   <br><br>
    ![screenshot](https://github.com/pkshahid/Ubuntu-22.04-LTS-in-Samsung-Galaxy-Book-2-Pro/blob/main/brightness.png?raw=true)
 4. Save and Reboot the system or run `update-grub`.
+
+# 2. Built-in Speaker not working.
+Solution : 
+1. Update Kernal to `6.4.6`.
+   - Check currently installed version.
+      ` uname -r `
+   - Download the mainline Linux kernel of your choice.
+        ` wget https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.4.6/amd64/linux-headers-6.4.6-060406-generic_6.4.6-060406.202307241739_amd64.deb `
+        ` wget https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.4.6/amd64/linux-headers-6.4.6-060406_6.4.6-060406.202307241739_all.deb `
+        ` wget https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.4.6/amd64/linux-image-unsigned-6.4.6-060406-generic_6.4.6-060406.202307241739_amd64.deb `
+        ` wget https://kernel.ubuntu.com/~kernel-ppa/mainline/v6.4.6/amd64/linux-modules-6.4.6-060406-generic_6.4.6-060406.202307241739_amd64.deb `
+   - Install the downloaded kernel
+        ` sudo dpkg -i *.deb `
+   - Reboot Ubuntu , disable `Secure Boot` in UEFI Settings , save and restart
+
+# 3. Wifi Not Working.
+Solution : 
+1. Open and edit `/etc/modprobe.d/iwlwifi.conf`
+   ` sudo nano /etc/modprobe.d/iwlwifi.conf `
+2. Add following line to the above file ;
+   `options iwlwifi 11n_disable=1 swcrypto=1`
+3. Save and Reboot the system.
