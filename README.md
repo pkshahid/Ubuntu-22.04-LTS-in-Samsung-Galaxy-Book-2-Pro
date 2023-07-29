@@ -32,6 +32,12 @@ Solution :
    - Install the downloaded kernel
         - ` sudo dpkg -i *.deb `
    - Reboot Ubuntu , disable `Secure Boot` in UEFI Settings , save and restart
+   - Install `pavucontol`<br>
+      `sudo apt update && sudo apt install pavucontrol`
+   <br><br>
+   ![screenshot](https://github.com/pkshahid/Ubuntu-22.04-LTS-in-Samsung-Galaxy-Book-2-Pro/blob/main/pavucontrol.png?raw=true)
+<br>
+   - Check for speaker options and `unmute` speaker
 
 # 3. Wifi Not Working.
 Solution : 
